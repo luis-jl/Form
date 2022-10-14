@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,500;1,600&display=swap" rel="stylesheet">
+  <title>Formulario</title>
+</head>
+<body>
+
+  <div id="video">
+    <video src="/pexels-cottonbro-5473806 (1).mp4" autoplay muted loop></video>
+  </div>
+
+
+  <form id="formulario">
+    <h1>FORMULARIO</h1>
+
+
+    <div>
+      <label for="email">Email:</label>
+      <input type="email" name="email" id="email" placeholder="Email: ej: nombre@dominio.com">
+    </div>
+
+    <div>
+      <label for="email2">Email alternativo: <span>(Opcional)</span></label>
+      <input type="email" name="email2" id="email2" placeholder="Email alternativo">
+    </div>
+    
+    <div>
+      <label for="asunto">Asunto:</label>
+      <input type="text" name="text" id="asunto" placeholder="Asunto Email">
+    </div>
+    
+    <div>
+      <label for="textArea">Mensaje:</label>
+      <textarea name="textArea" id="textArea" cols="30" rows="5" placeholder="Mensaje Email"></textarea>
+    </div>
+
+    <div id="botones">
+      <button type="submit">
+        <div class="img">
+          <img src="/img/send.svg" alt="">
+        </div>
+        Enviar Form
+      </button>
+
+        <button id="reset"  type="reset">
+          <div class="img">
+            <img src="/img/clear.svg">
+          </div>
+          Limpiar Form
+        </button>    
+    </div>
+
+  </form>
+  <script src="app.js"></script>
+</body>
+</html>
