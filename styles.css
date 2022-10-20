@@ -5,7 +5,27 @@
     font-family: 'Open Sans', sans-serif;
 }
 
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.contacto{
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.logo-link{
+    width: 25px;
+    height: auto;
+    margin: 5px 10px;
+}
+
 h1{
+    flex-grow: 1;
     color: #fff;
     padding-bottom: 20px;
 }
