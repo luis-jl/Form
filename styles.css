@@ -4,12 +4,21 @@
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
 }
+main{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(to right, rgb(29, 95, 133) , rgb(82, 29, 75));    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 header{
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+    margin-bottom: 20px;
 }
 
 .contacto{
@@ -19,42 +28,25 @@ header{
 }
 
 .logo-link{
+    margin: 5px;
     width: 25px;
     height: auto;
-    margin: 5px 10px;
 }
 
 h1{
-    flex-grow: 1;
     color: #fff;
-    padding-bottom: 20px;
-}
-
-#video{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    z-index: -10;
-
-}
-
-
-body{
-    display: flex;
-    height: 100vh;
-    align-items: center;
-    justify-content: center;
 }
 
 #formulario{
+    max-width: 40rem;
+    max-height: 50rem;
     padding: 30px;
-    margin: 10px;   
+    margin: 10px;    
     border-radius: 10px;
     box-shadow: 0 0 rgba(0, 0, 0, .5);
     background-color: rgba(255, 255, 355, .19);
     border: .1rem solid rgba(255, 255, 355, .20);
-}
+} 
 span{
     color: #140303;
     font-weight: bold;
@@ -70,7 +62,7 @@ input {
     border-radius: 10px;
     padding: 10px;
     width: 100%;
-    height: 2.5rem;
+    max-height: 2.5rem;
     margin-bottom: 10px;
     font-size: medium;  
 }
@@ -104,13 +96,14 @@ img{
 }
 
 button{
+    padding: .2rem;
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 10px;
     height: 2.5rem;
     font-weight: 700;
-    font-size: large;
+    font-size: 1.1rem;
     background-color: #1f9b4c;
     color: #fff;
     cursor: pointer;
@@ -121,6 +114,19 @@ button{
 #reset{
     background-color: rgb(11, 90, 90);
 }
+
+.exito{
+    text-transform: uppercase;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+    height: 2.5rem;
+    font-weight: 500;
+    font-size: 1.1rem;
+    background-color: #1f9b4c;
+    color: #fff;
+    margin-top: 15px;
+} 
 
 .error{
     text-align: center;
@@ -140,7 +146,6 @@ button{
     opacity: .7;
 }
 
-/* SPINNER */
 
 .exito{
     text-transform: uppercase;
@@ -149,17 +154,15 @@ button{
     border-radius: 10px;
     height: 2.5rem;
     font-weight: 500;
-    font-size: large;
+    font-size: 1.1rem;
     background-color: #1f9b4c;
     color: #fff;
     margin-top: 15px;
-}
+} 
 
 .ocultar{
     display: none;
 }
-
-
 
 .mostrar{
     margin-top: 20px;
@@ -222,4 +225,4 @@ button{
     } 
   }
 
- 
+  
